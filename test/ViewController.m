@@ -21,8 +21,8 @@
     
     _bv = [[BatteryView alloc] init];
     [self.view addSubview:_bv];
-    _bv.frame = CGRectMake(100, 100, 50, 100);
-    _bv.quntity = @"20";
+    _bv.frame = CGRectMake(100, 100, 20, 50);
+    _bv.quntity = @"50";
 }
 
 

@@ -55,9 +55,9 @@
     UIBezierPath *path3 =
     [UIBezierPath bezierPathWithRect:
      CGRectMake(MAX(self.nagtiveBoxH / 2.0, 1) + (W - self.mainBoxW) / 2.0,
-                self.mainBoxH * (1 - self.quntity.integerValue / 100.0) + self.nagtiveBoxH + (H - self.mainBoxH - self.nagtiveBoxH) / 2.0,
+                self.mainBoxH * (1 - self.quntity.integerValue / 100.0) + self.nagtiveBoxH + (H - self.mainBoxH - self.nagtiveBoxH) / 2.0 + MAX(self.nagtiveBoxH / 2.0, 1),
                 self.mainBoxW - MAX(self.nagtiveBoxH / 2.0, 1) * 2,
-                self.mainBoxH * (self.quntity.integerValue / 100.0) - MAX(self.nagtiveBoxH / 2.0, 1))];
+                self.mainBoxH * (self.quntity.integerValue / 100.0) - MAX(self.nagtiveBoxH / 2.0, 1) * 2)];
     [[UIColor greenColor] set];
     [path3 fill];
     if (self.isCharge) {
