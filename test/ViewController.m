@@ -6,11 +6,11 @@
 //
 
 #import "ViewController.h"
-#import "batteryView.h"
+#import "BatteryView.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) batteryView *bv;
+@property (nonatomic, strong) BatteryView *bv;
 
 @end
 
@@ -19,11 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _bv = [[batteryView alloc] init];
+    _bv = [[BatteryView alloc] init];
     [self.view addSubview:_bv];
     _bv.frame = CGRectMake(100, 100, 50, 100);
-    _bv.backgroundColor = [UIColor whiteColor];
-    _bv.stroage = @"20";
+    _bv.quntity = @"20";
 }
 
 
